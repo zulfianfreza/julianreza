@@ -1,0 +1,28 @@
+import { IProject } from '@/types'
+import fs from 'fs'
+import matter from 'gray-matter'
+
+const getProjects = (): IProject[] => {
+  const folder = 'src/data/project/'
+  const files = fs.readdirSync(folder)
+  const markdownProjects = files.filter((file) => file.endsWith('.mdx'))
+
+  const projects = markdownProjects.map((filename) => {
+    const fileContents = fs.readFileSync(
+      `src/data/project/${filename}`,
+      'utf-8'
+    )
+    const matterResult = matter(fileContents)
+    return {
+      title: matterResult.data.title,
+      slug: filename.replace('.mdx', ''),
+      image: matterResult.data.image,
+      summary: matterResult.data.summary,
+      finish: matterResult.data.finish,
+    }
+  })
+
+  return projects
+}
+
+export default getProjects
