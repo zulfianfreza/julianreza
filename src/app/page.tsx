@@ -63,8 +63,10 @@ export default function Home() {
             <ProjectItem key={index} data={project} />
           ))} */}
           {projects
-            .sort(() => Math.random() - 0.5)
-            .splice(0, 2)
+            .filter(
+              (project) =>
+                project.slug === 'circle' || project.slug === 'healio'
+            )
             .map((project, index) => (
               <ProjectItem data={project} key={index} />
             ))}
