@@ -1,9 +1,10 @@
 import { IProject } from '@/types'
 import fs from 'fs'
 import matter from 'gray-matter'
+import path from 'path'
 
 const getProjects = (): IProject[] => {
-  const folder = 'src/data/project/'
+  const folder = path.join(process.cwd(), 'src/data/project/')
   const files = fs.readdirSync(folder)
   const markdownProjects = files.filter((file) => file.endsWith('.mdx'))
 

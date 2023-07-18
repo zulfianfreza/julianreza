@@ -1,8 +1,9 @@
 import fs from 'fs'
 import matter from 'gray-matter'
+import path from 'path'
 
 const getProjectBySlug = (slug: string) => {
-  const folder = 'src/data/project/'
+  const folder = path.join(process.cwd(), 'src/data/project/')
   const file = `${folder}${slug}.mdx`
   const content = fs.readFileSync(file, 'utf8')
   const matterResult = matter(content)
