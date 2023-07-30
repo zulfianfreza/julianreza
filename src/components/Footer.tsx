@@ -8,15 +8,15 @@ export default function Footer() {
   return (
     <>
       <Container className=" mt-10">
-        <hr className=" border-slate-200 dark:border-slate-700 transition duration-300" />
+        <hr className=" border-gray-200 dark:border-gray-700 transition duration-300" />
         <footer className=" py-10">
           <div className="flex flex-col md:flex-row gap-x-36 gap-y-8 md:gap-y-4 justify-between">
             <div className="">
               <div className="flex items-center gap-x-2">
                 <SiSpotify className=" h-5 w-5 text-[#1dd05e]" />
-                <p className=" dark:text-slate-400 text-slate-600">
+                <p className=" dark:text-gray-400 text-gray-500">
                   Spotify -{' '}
-                  <span className=" dark:text-slate-50 text-slate-800 text-base">
+                  <span className=" dark:text-gray-50 text-gray-950 text-base">
                     Not Playing
                   </span>
                 </p>
@@ -28,25 +28,25 @@ export default function Footer() {
                 <nav className=" flex flex-col gap-y-4">
                   <Link
                     href="/"
-                    className=" text-slate-600 dark:text-slate-400 transition duration-100 hover:text-slate-800 hover:dark:text-slate-50"
+                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                   >
                     Home
                   </Link>
                   <Link
                     href=""
-                    className=" text-slate-600 dark:text-slate-400 transition duration-100 hover:text-slate-800 hover:dark:text-slate-50"
+                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                   >
                     About
                   </Link>
                   <Link
                     href="/showcase"
-                    className=" text-slate-600 dark:text-slate-400 transition duration-100 hover:text-slate-800 hover:dark:text-slate-50"
+                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                   >
                     Showcase
                   </Link>
                   <Link
                     href=""
-                    className=" text-slate-600 dark:text-slate-400 transition duration-100 hover:text-slate-800 hover:dark:text-slate-50"
+                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                   >
                     Blog
                   </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
                       key={index}
                       href={social.url}
                       target="_blank"
-                      className=" text-slate-600 dark:text-slate-400 transition duration-100 hover:text-slate-800 hover:dark:text-slate-50"
+                      className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                     >
                       {social.name}
                     </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
                   <Link
                     href="https://github.com/zulfianfreza/julianreza.com"
                     target="_blank"
-                    className=" text-slate-600 dark:text-slate-400 transition duration-100 hover:text-slate-800 hover:dark:text-slate-50"
+                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                   >
                     Source Code
                   </Link>
@@ -82,10 +82,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center mt-10 justify-center">
-            <p className=" text-slate-600 dark:text-slate-400 text-sm">
+            <p className=" text-gray-500 dark:text-gray-400 text-sm">
               Made with Basreng and Bajigur.
             </p>
-            <p className=" text-slate-600 dark:text-slate-400 text-sm">
+            <p className=" text-gray-500 dark:text-gray-400 text-sm">
               Copyright &copy; 2023, julianreza.
             </p>
           </div>

@@ -1,6 +1,9 @@
+'use client'
 import Container from '@/components/Container'
 import Heading from '@/components/Heading'
-import React from 'react'
+import { MY_STACK } from '@/lib/constants/stack'
+import React, { useCallback } from 'react'
+import { useDropzone } from 'react-dropzone'
 
 export default function Page() {
   return (
@@ -9,25 +12,115 @@ export default function Page() {
         <Heading title="My Ninja Way 🥷" />
         <div className=" flex flex-col gap-y-4 mt-4">
           <div className="">
-            <p className=" text-gray-800">2015 - 2018</p>
-            <h4 className=" text-gray-800 font-semibold text-lg">
-              SMKN 4 Padalarang (Software Engineering)
-            </h4>
-            <p className=" text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab
-              velit repudiandae illum, iste temporibus.
+            <div className=" flex justify-between items-start">
+              <div className="">
+                <h4 className=" text-gray-950 dark:text-gray-50 font-medium text-lg">
+                  Bachelor of Informatics Engineering
+                </h4>
+                <h4 className=" text-gray-500 dark:text-gray-400">
+                  Universitas Komputer Indonesia, Bandung
+                </h4>
+              </div>
+              <p className=" text-gray-950 dark:text-gray-50">2018 - 2022</p>
+            </div>
+            <p className=" text-gray-500 dark:text-gray-400">
+              Cumulative GPA: 3.33/4.0
             </p>
           </div>
           <div className="">
-            <p className=" text-gray-800">2018 - 2022</p>
-            <h4 className=" text-gray-800 font-semibold text-lg">
-              Universitas Komputer Indonesia (Informatics Engineering)
-            </h4>
-            <p className=" text-gray-600">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-              odit obcaecati aliquam optio officia ullam a eligendi,
-              exercitationem quis facere vel? Nihil fugiat voluptates ab!
-            </p>
+            <div className=" flex justify-between items-center">
+              <div className="">
+                <h4 className=" text-gray-950 dark:text-gray-50 font-medium text-lg">
+                  Software Engineering,
+                </h4>
+                <h4 className=" text-gray-500 dark:text-gray-400">
+                  SMKN 4 Padalarang, Bandung
+                </h4>
+              </div>
+              <p className=" text-gray-950 dark:text-gray-50">2015 - 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8">
+        <Heading title="Work Experience" />
+        <div className="">
+          <div className="">
+            <div className=" flex justify-between items-center">
+              <h1 className=" font-medium text-lg text-gray-950 dark:text-gray-50">
+                Dinas Perhubungan Provinsi Jawa Barat
+              </h1>
+              <p className=" text-gray-950 dark:text-gray-50">
+                Sept 2021 - Dec 2021
+              </p>
+            </div>
+            <article className=" prose max-w-full dark:prose-invert">
+              <ul>
+                <li>
+                  Responsible for recapitulation of ANDALALIN (Traffic Impact
+                  Analysis) data
+                </li>
+                <li>
+                  Creating an ANDALALIN Licensing Service Information System
+                  website.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div className="">
+            <div className=" flex justify-between items-center">
+              <h1 className=" font-medium text-lg text-gray-950 dark:text-gray-50">
+                Konsep Dot Net
+              </h1>
+              <p className=" text-gray-950 dark:text-gray-50">
+                Jan 2017 - Apr 2017
+              </p>
+            </div>
+            <article className=" max-w-full prose dark:prose-invert">
+              <ul>
+                <li>
+                  Perform slicing of designs that have been provided using HTML,
+                  CSS, and Javascript.
+                </li>
+                <li>Write an article related to technology.</li>
+                <li>
+                  Become a facilitator in the KLA (Child Friendly City)
+                  application launching event organized by KPPPA (Ministry of
+                  Women&apos;s Empowerment and Child Protection)
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div className=" mt-10">
+        <Heading
+          title="My Stack"
+          subtitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo vel nobis deleniti totam saepe quasi dolore iste, eos vitae?"
+        />
+        <div className=" flex flex-wrap gap-2 mt-4">
+          {MY_STACK.map((stack, index) => (
+            <div
+              key={index}
+              className=" px-4 py-1 dark:bg-gray-800 text-sm dark:text-gray-50 bg-gray-100 text-gray-950"
+            >
+              {stack}
+            </div>
+          ))}
+        </div>
+        <div className=" mt-10">
+          <Heading title="Interest" />
+          <div className=" flex flex-wrap gap-2 mt-4">
+            {['Golang', 'GraphQL', 'React Native', 'Astro', 'Qwik'].map(
+              (stack, index) => (
+                <div
+                  key={index}
+                  className=" px-4 py-1 dark:bg-gray-800 text-sm dark:text-gray-50 bg-gray-100 text-gray-950"
+                >
+                  {stack}
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

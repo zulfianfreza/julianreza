@@ -17,34 +17,40 @@ export default function Home() {
     <Container>
       <div className="flex items-center gap-x-10 my-10">
         <div className=" flex-1 flex flex-col items-start">
-          <p className=" text-slate-600 dark:text-slate-400">
+          {/* <p className=" text-gray-500 dark:text-gray-400 text-sm">
             Hallo 👋, I&apos;m <br />
-          </p>
-          <h1 className=" text-4xl md:text-5xl text-slate-800 dark:text-slate-50 font-black mt-2">
+          </p> */}
+          <h1 className=" text-4xl md:text-5xl text-gray-950 dark:text-gray-50 font-bold mt-2">
             Zulfian F. Reza
           </h1>
-          <p className=" text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+          <p className=" text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
             I am a{' '}
-            <span className=" font-semibold text-slate-800 dark:text-slate-50">
+            <span className=" font-medium text-gray-950 dark:text-gray-50">
               software engineer
             </span>{' '}
             who really interested in{' '}
-            <span className=" font-semibold text-slate-800 dark:text-slate-50">
+            <span className=" font-medium text-gray-950 dark:text-gray-50">
               Frontend
             </span>
             ,{' '}
-            <span className=" font-semibold text-slate-800 dark:text-slate-50">
+            <span className=" font-medium text-gray-950 dark:text-gray-50">
               Mobile
             </span>
             , also{' '}
-            <span className=" font-semibold text-slate-800 dark:text-slate-50">
+            <span className=" font-medium text-gray-950 dark:text-gray-50">
               Fullstack Development
             </span>
             .
           </p>
+          <p className=" text-gray-500 dark:text-gray-400">
+            Want to collaborate?{' '}
+            <span className=" text-gray-950 dark:text-gray-50 font-medium">
+              Contact me 🤙
+            </span>
+          </p>
           <Link
             href=""
-            className=" text-slate-50 mt-4 dark:text-slate-900 text-sm md:flex items-center hidden font-medium px-4 h-10 bg-slate-900 dark:bg-slate-50 transition duration-100"
+            className=" text-gray-50 mt-4 dark:text-gray-900 text-sm md:flex items-center hidden font-medium px-4 h-10 bg-gray-900 dark:bg-gray-50 transition duration-100"
           >
             Resume
           </Link>
@@ -83,6 +89,7 @@ export default function Home() {
           title="Featured Posts ✏️"
           subtitle="Discover my random posts, feel free to explore it."
         />
+        <div className=""></div>
         <div className="mt-10 flex justify-end w-full">
           <ExploreLink href="/showcase" label="Read all posts" />
         </div>

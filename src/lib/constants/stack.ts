@@ -1,0 +1,18 @@
+export const MY_STACK = [
+  'Nextjs',
+  'Reactjs',
+  'MongoDB',
+  'MySQL',
+  'Typescript',
+  'Tailwindcss',
+  'Bootstrap',
+  'PHP',
+  'PostgreSQL',
+  'Nodejs',
+  'Expressjs',
+  'Codeigniter 4',
+  'Flutter',
+  'Provider',
+  'BLoC',
+  'tRPC',
+]

@@ -9,13 +9,11 @@ interface HeadingProps {
 
 export default function Heading({ title, subtitle, center }: HeadingProps) {
   return (
-    <div className={cn(' space-y-2', { 'text-center': center })}>
-      <h1 className=" font-black text-3xl text-slate-800 dark:text-slate-100">
+    <div className={cn(' space-y-1', { 'text-center': center })}>
+      <h1 className=" font-bold text-2xl text-gray-950 dark:text-gray-50">
         {title}
       </h1>
-      <p className=" text-slate-600 dark:text-slate-400 leading-relaxed">
-        {subtitle}
-      </p>
+      <p className=" text-gray-500 dark:text-gray-400 text">{subtitle}</p>
     </div>
   )
 }
