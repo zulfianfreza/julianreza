@@ -17,7 +17,7 @@ export default function ProjectItem({ data }: { data: IProject }) {
       </div>
       <div className="py-4 space-y-2">
         <div className="flex items-center gap-x-2">
-          <h1 className=" text-xl text-slate-950 dark:text-slate-50 font-bold">
+          <h1 className=" text-xl text-gray-950 dark:text-gray-50 font-medium">
             {data.title}
           </h1>
           <div
@@ -44,7 +44,7 @@ export default function ProjectItem({ data }: { data: IProject }) {
             <IconStack key={index} stack={stack} />
           ))}
         </div> */}
-        <p className=" text-slate-500 dark:text-slate-400 line-clamp-3">
+        <p className=" text-gray-500 dark:text-gray-400 line-clamp-3">
           {data.summary}
         </p>
       </div>

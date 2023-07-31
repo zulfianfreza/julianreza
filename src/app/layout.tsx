@@ -25,9 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Providers>
-          <div className=" bg-white w-full dark:bg-gray-950 transition duration-300 min-h-screen relative">
+          <div className=" bg-white w-full dark:bg-gray-950 transition duration-300 min-h-screen relative tracking-tighter">
             <Navbar />
-            <div className=" ">{children}</div>
+            <div className="">{children}</div>
             <Footer />
           </div>
         </Providers>

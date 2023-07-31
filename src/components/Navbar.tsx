@@ -20,7 +20,7 @@ function ItemMenu({ title, path }: ItemMenuProps) {
     <Link
       href={path}
       className={cn(
-        ' text-gray-600 dark:text-gray-400 font-normal px-4 py-2 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-100',
+        ' text-gray-500 dark:text-gray-400 font-normal px-4 py-2 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-100',
         {
           ' text-gray-800 dark:text-gray-50 font-medium':
             pathname.split('/')[1] === path.split('/')[1],

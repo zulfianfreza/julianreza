@@ -13,7 +13,7 @@ export default function Page() {
         <div className=" flex flex-col gap-y-4 mt-4">
           <div className="">
             <div className=" flex justify-between items-start">
-              <div className="">
+              <div className=" flex-1">
                 <h4 className=" text-gray-950 dark:text-gray-50 font-medium text-lg">
                   Bachelor of Informatics Engineering
                 </h4>
@@ -24,14 +24,18 @@ export default function Page() {
               <p className=" text-gray-950 dark:text-gray-50">2018 - 2022</p>
             </div>
             <p className=" text-gray-500 dark:text-gray-400">
-              Cumulative GPA: 3.33/4.0
+              Cumulative GPA: 3.33/4.00
+            </p>
+            <p className=" text-gray-500 dark:text-gray-400">
+              Thesis: Health Monitoring Application by Utilizing an
+              Android-Based Smartwatch
             </p>
           </div>
           <div className="">
             <div className=" flex justify-between items-center">
-              <div className="">
+              <div className=" flex-1">
                 <h4 className=" text-gray-950 dark:text-gray-50 font-medium text-lg">
-                  Software Engineering,
+                  Software Engineering
                 </h4>
                 <h4 className=" text-gray-500 dark:text-gray-400">
                   SMKN 4 Padalarang, Bandung
@@ -46,8 +50,8 @@ export default function Page() {
         <Heading title="Work Experience" />
         <div className="">
           <div className="">
-            <div className=" flex justify-between items-center">
-              <h1 className=" font-medium text-lg text-gray-950 dark:text-gray-50">
+            <div className=" flex justify-between items-start">
+              <h1 className=" font-medium text-lg text-gray-950 dark:text-gray-50 flex-1">
                 Dinas Perhubungan Provinsi Jawa Barat
               </h1>
               <p className=" text-gray-950 dark:text-gray-50">
@@ -69,8 +73,8 @@ export default function Page() {
           </div>
           <div className="">
             <div className=" flex justify-between items-center">
-              <h1 className=" font-medium text-lg text-gray-950 dark:text-gray-50">
-                Konsep Dot Net
+              <h1 className=" font-medium text-lg text-gray-950 dark:text-gray-50 flex-1">
+                PT. KONSEP DOT NET
               </h1>
               <p className=" text-gray-950 dark:text-gray-50">
                 Jan 2017 - Apr 2017
