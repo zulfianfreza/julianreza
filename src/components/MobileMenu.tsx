@@ -18,9 +18,9 @@ const ItemMenu = ({ title, path }: ItemMenuProps) => {
       <Link
         href={path}
         className={cn(
-          ' px-2.5 py-2 w-full text-sm text-slate-600 dark:text-slate-400 dark:hover:bg-slate-700 hover:bg-slate-100  transition duration-100',
+          ' px-2.5 py-2 w-full text-sm text-gray-500 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-gray-100  transition duration-100',
           {
-            'text-slate-800 dark:text-slate-50 font-medium':
+            'text-gray-800 dark:text-gray-50 font-medium':
               pathname.split('/')[1] === path.split('/')[1],
           }
         )}
@@ -38,9 +38,9 @@ export default function MobileMenu() {
         <>
           <Menu.Button
             className={cn(
-              `h-10 w-10 focus:ring-2 focus:ring-slate-200 active:ring-2 focus:dark:ring-slate-700 md:hidden items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-slate-100 hover:bg-opacity-90 transition duration-100 flex dark:hover:bg-slate-800`,
+              `h-10 w-10 focus:ring-2 focus:ring-gray-200 active:ring-2 focus:dark:ring-gray-700 md:hidden items-center justify-center text-gray-950 dark:text-gray-50 hover:bg-gray-100 hover:bg-opacity-90 transition duration-100 flex dark:hover:bg-gray-800`,
               {
-                'bg-slate-100 ring-2 dark:bg-slate-800 ring-slate-200 dark:ring-slate-700':
+                'bg-gray-100 ring-2 dark:bg-gray-800 ring-gray-200 dark:ring-gray-700':
                   open,
               }
             )}
@@ -60,7 +60,7 @@ export default function MobileMenu() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute z-50 right-0 mt-2 w-48 origin-top-right divide-y divide-gray-100 bg-white dark:bg-slate-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <Menu.Items className="absolute z-50 right-0 mt-2 w-48 origin-top-right divide-y divide-gray-100 bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
               <div className="p-2 flex flex-col text-[16px] lg:text-[20px]">
                 <ItemMenu title="Home" path="/" />
                 <ItemMenu title="About" path="/about" />

@@ -55,7 +55,7 @@ export default function Navbar() {
               <ItemMenu title="Showcase" path="/showcase" />
               <ItemMenu title="Blog" path="/blog" />
             </div>
-            <div className=" flex-1 flex justify-end gap-x-2">
+            <div className=" flex-1 flex justify-end gap-x-1">
               <ThemeToggle />
               <MobileMenu />
             </div>
