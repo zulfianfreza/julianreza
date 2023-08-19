@@ -13,6 +13,18 @@ import SpeedCodeSection from '@/components/SpeedCodeSection'
 import { LuCalendarDays, LuClock } from 'react-icons/lu'
 
 export default function Home() {
+  const POSTS = [
+    {
+      title: 'Build CRUD App with tRPC Next.js',
+      publishedDate: 'Aug 18, 2023',
+      readTime: '7 min read',
+    },
+    {
+      title: 'How To Center a Div',
+      publishedDate: 'Jun 26, 2023',
+      readTime: '3 min read',
+    },
+  ]
   const projects = getProjects()
 
   return (
@@ -145,16 +157,3 @@ export default function Home() {
     </Container>
   )
 }
-
-export const POSTS = [
-  {
-    title: 'Build CRUD App with tRPC Next.js',
-    publishedDate: 'Aug 18, 2023',
-    readTime: '7 min read',
-  },
-  {
-    title: 'How To Center a Div',
-    publishedDate: 'Jun 26, 2023',
-    readTime: '3 min read',
-  },
-]
