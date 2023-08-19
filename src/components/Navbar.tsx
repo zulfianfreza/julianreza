@@ -8,6 +8,7 @@ import Logo from './Logo'
 import { cn } from '@/lib/utils'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 import Container from './Container'
+import { MENU } from '@/lib/constants/menu'
 
 interface ItemMenuProps {
   title: string
@@ -20,9 +21,9 @@ function ItemMenu({ title, path }: ItemMenuProps) {
     <Link
       href={path}
       className={cn(
-        ' text-gray-500 dark:text-gray-400 font-normal px-4 py-2 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-100',
+        ' text-gray-500 dark:text-gray-400 font-normal px-4 py-2 bg-transparent text-base hover:text-gray-800 transition duration-100',
         {
-          ' text-gray-800 dark:text-gray-50 font-medium':
+          ' text-gray-800 dark:text-gray-100 font-medium':
             pathname.split('/')[1] === path.split('/')[1],
         }
       )}
@@ -50,10 +51,12 @@ export default function Navbar() {
               <Logo />
             </div>
             <div className=" hidden md:flex text-sm">
-              <ItemMenu title="Home" path="/" />
-              <ItemMenu title="About" path="/about" />
+              {MENU.map((menu, index) => (
+                <ItemMenu key={index} title={menu.title} path={menu.path} />
+              ))}
+              {/* <ItemMenu title="About" path="/about" />
               <ItemMenu title="Showcase" path="/showcase" />
-              <ItemMenu title="Blog" path="/blog" />
+              <ItemMenu title="Blog" path="/blog" /> */}
             </div>
             <div className=" flex-1 flex justify-end gap-x-1">
               <ThemeToggle />

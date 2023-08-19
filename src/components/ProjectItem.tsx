@@ -7,7 +7,7 @@ import React from 'react'
 export default function ProjectItem({ data }: { data: IProject }) {
   return (
     <Link href={`/showcase/${data.slug}`} className="  group">
-      <div className=" w-full aspect-[16/9] relative">
+      <div className=" w-full aspect-[16/9] relative rounded-xl overflow-hidden">
         <Image
           src={data.image ?? ''}
           fill={true}
@@ -15,13 +15,13 @@ export default function ProjectItem({ data }: { data: IProject }) {
           className=" object-cover object-top transition-all duration-300"
         />
       </div>
-      <div className="py-4 space-y-2">
+      <div className="py-4 space-y-1">
         <div className="flex items-center gap-x-2">
-          <h1 className=" text-xl text-gray-950 dark:text-gray-50 font-medium">
+          <h1 className=" text-lg text-gray-800 dark:text-gray-100 font-medium">
             {data.title}
           </h1>
           <div
-            className={cn(' px-2 py-1 transition-all duration-300', {
+            className={cn(' px-2 py-[2px] transition-all duration-300', {
               'bg-indigo-100': data.finish,
               'bg-pink-100': data.finish === false,
             })}

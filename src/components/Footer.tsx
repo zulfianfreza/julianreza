@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { SiSpotify } from 'react-icons/si'
 import Container from './Container'
+import { MENU } from '@/lib/constants/menu'
 
 export default function Footer() {
   return (
@@ -16,45 +17,30 @@ export default function Footer() {
                 <SiSpotify className=" h-5 w-5 text-[#1dd05e]" />
                 <p className=" dark:text-gray-400 text-gray-500">
                   Spotify -{' '}
-                  <span className=" dark:text-gray-50 text-gray-950 text-base">
+                  <span className=" dark:text-gray-100 text-gray-800">
                     Not Playing
                   </span>
                 </p>
               </div>
             </div>
-            <div className=" flex flex-1">
-              <div className=" space-y-4 flex-1">
-                <h1 className=" text-lg font-bold">General</h1>
-                <nav className=" flex flex-col gap-y-4">
-                  <Link
-                    href="/"
-                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    href=""
-                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/showcase"
-                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
-                  >
-                    Showcase
-                  </Link>
-                  <Link
-                    href=""
-                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
-                  >
-                    Blog
-                  </Link>
+            <div className=" flex-1 grid grid-cols-1 gap-8 sm:grid-cols-3">
+              <div className=" space-y-2 flex-1">
+                <h1 className=" text-lg font-semibold">General</h1>
+                <nav className=" flex flex-col gap-y-1">
+                  {MENU.map((menu, index) => (
+                    <Link
+                      key={index}
+                      href={menu.path}
+                      className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
+                    >
+                      {menu.title}
+                    </Link>
+                  ))}
                 </nav>
               </div>
-              <div className=" space-y-4 flex-1">
-                <h1 className=" text-lg font-bold">Social</h1>
-                <nav className=" flex flex-col gap-y-4">
+              <div className=" space-y-2 flex-1">
+                <h1 className=" text-lg font-semibold">Social</h1>
+                <nav className=" flex flex-col gap-y-1">
                   {SOCIAL_LIST.map((social, index) => (
                     <Link
                       key={index}
@@ -67,9 +53,9 @@ export default function Footer() {
                   ))}
                 </nav>
               </div>
-              <div className=" space-y-4 flex-1">
-                <h1 className=" text-lg font-bold">Extra</h1>
-                <nav className=" flex flex-col gap-y-4">
+              <div className=" space-y-2 flex-1">
+                <h1 className=" text-lg font-semibold">Extra</h1>
+                <nav className=" flex flex-col gap-y-1">
                   <Link
                     href="https://github.com/zulfianfreza/julianreza.com"
                     target="_blank"
@@ -82,16 +68,16 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center mt-10 justify-center">
-            <p className=" text-gray-500 dark:text-gray-400 text-sm">
+            <p className=" text-gray-500 dark:text-gray-400">
               Made with Basreng and Bajigur.
             </p>
-            <p className=" text-gray-500 dark:text-gray-400 text-sm">
+            <p className=" text-gray-500 dark:text-gray-400">
               Copyright &copy; 2023, julianreza.
             </p>
           </div>
         </footer>
       </Container>
-      <div className="w-full h-[6px] bg-gradient-to-r from-yellow-300 via-indigo-500 to-pink-400" />
+      {/* <div className="w-full h-[6px] bg-amber-400" /> */}
     </>
   )
 }

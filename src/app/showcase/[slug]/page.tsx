@@ -33,24 +33,24 @@ export default function Page({ params }: PageParams) {
     <Container>
       <div className=" mt-10">
         <Heading title={project.title} subtitle={project.summary} />
-        <div className=" mt-4 flex justify-center gap-x-4">
+        <div className=" mt-4 flex gap-x-2">
           <Link
             href={project.repo}
             target="_blank"
-            className=" gap-x-1 px-4 h-10 hover:bg-gray-100 text-gray-800 dark:text-gray-100 dark:hover:bg-gray-800 flex items-center text-sm justify-center"
+            className=" gap-x-1 px-4 h-10 bg-gray-100 border rounded-lg hover:bg-gray-100 font-medium text-gray-800 dark:text-gray-100 dark:hover:bg-gray-800 flex items-center text-sm justify-center"
           >
             <SiGithub size={16} /> Repository
           </Link>
           <Link
             href={project.demo}
             target="_blank"
-            className=" flex items-center hover:bg-gray-100 text-gray-800 dark:text-gray-100 dark:hover:bg-gray-800 h-10 px-4 text-sm justify-center gap-x-1"
+            className=" flex items-center bg-gray-100 border rounded-lg hover:bg-gray-100 font-medium text-gray-800 dark:text-gray-100 dark:hover:bg-gray-800 h-10 px-4 text-sm justify-center gap-x-1"
           >
             <Globe size={16} /> Live Demo
           </Link>
         </div>
       </div>
-      <div className=" mt-8 w-full aspect-[16/9] relative">
+      <div className=" mt-8 w-full aspect-[16/9] relative rounded-xl overflow-hidden">
         <Image
           src={project.image ?? ''}
           alt=""

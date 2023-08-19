@@ -9,10 +9,17 @@ interface HeadingProps {
 
 export default function Heading({ title, subtitle, center }: HeadingProps) {
   return (
-    <div className={cn(' space-y-1', { 'text-center': center })}>
-      <h1 className=" font-bold text-2xl text-gray-950 dark:text-gray-50">
-        {title}
-      </h1>
+    <div
+      className={cn(' space-y-1 flex flex-col items-start', {
+        'text-center': center,
+      })}
+    >
+      <div className="  relative flex justify-start">
+        <h1 className="font-semibold text-3xl text-gray-800 z-10 dark:text-gray-100">
+          {title}
+        </h1>
+        <div className=" w-3/4 h-2 absolute bg-yellow-400 dark:bg-yellow-500 bottom-1 right-0"></div>
+      </div>
       <p className=" text-gray-500 dark:text-gray-400 text">{subtitle}</p>
     </div>
   )
