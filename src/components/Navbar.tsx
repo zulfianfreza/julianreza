@@ -1,4 +1,5 @@
 'use client'
+
 import Link from 'next/link'
 import React from 'react'
 import ThemeToggle from './ThemeToggle'
@@ -21,7 +22,7 @@ function ItemMenu({ title, path }: ItemMenuProps) {
     <Link
       href={path}
       className={cn(
-        ' text-gray-500 dark:text-gray-400 font-normal px-4 py-2 bg-transparent text-base hover:text-gray-800 transition duration-100',
+        ' text-gray-500 dark:text-gray-400 dark:hover:text-gray-100 font-normal px-4 py-2 bg-transparent text-sm hover:text-gray-800 transition duration-100',
         {
           ' text-gray-800 dark:text-gray-100 font-medium':
             pathname.split('/')[1] === path.split('/')[1],
@@ -47,7 +48,7 @@ export default function Navbar() {
       <nav className="py-5">
         <Container>
           <div className="flex justify-between items-center">
-            <div className=" flex-1">
+            <div className=" flex-1 flex justify-start">
               <Logo />
             </div>
             <div className=" hidden md:flex text-sm">

@@ -106,7 +106,7 @@ export default function Page() {
           {MY_STACK.map((stack, index) => (
             <div
               key={index}
-              className=" px-4 py-1 border dark:border-gray-700 rounded-sm dark:bg-gray-800 text-sm dark:text-gray-100 bg-gray-100 text-gray-800"
+              className=" px-4 py-1 border dark:border-gray-700 rounded-[4px] dark:bg-gray-800 text-sm dark:text-gray-100 bg-gray-100 text-gray-800"
             >
               {stack}
             </div>
@@ -115,16 +115,14 @@ export default function Page() {
         <div className=" mt-10">
           <Heading title="Interest" />
           <div className=" flex flex-wrap gap-2 mt-4">
-            {['Golang', 'GraphQL', 'React Native', 'ASP.NET'].map(
-              (stack, index) => (
-                <div
-                  key={index}
-                  className=" px-4 py-1 dark:bg-gray-800 border dark:border-gray-700 rounded-sm text-sm dark:text-gray-100 bg-gray-100 text-gray-800"
-                >
-                  {stack}
-                </div>
-              )
-            )}
+            {['GraphQL', 'React Native', 'ASP.NET'].map((stack, index) => (
+              <div
+                key={index}
+                className=" px-4 py-1 dark:bg-gray-800 border dark:border-gray-700 rounded-[4px] text-sm dark:text-gray-100 bg-gray-100 text-gray-800"
+              >
+                {stack}
+              </div>
+            ))}
           </div>
         </div>
       </div>

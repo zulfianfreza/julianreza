@@ -1,4 +1,5 @@
 'use client'
+
 import { InstagramEmbed } from 'react-social-media-embed'
 import Heading from './Heading'
 

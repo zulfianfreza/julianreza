@@ -1,3 +1,5 @@
+'use client'
+
 import { SOCIAL_LIST } from '@/lib/constants/social'
 import Link from 'next/link'
 import React from 'react'
@@ -15,7 +17,7 @@ export default function Footer() {
             <div className="">
               <div className="flex items-center gap-x-2">
                 <SiSpotify className=" h-5 w-5 text-[#1dd05e]" />
-                <p className=" dark:text-gray-400 text-gray-500">
+                <p className=" dark:text-gray-400 text-gray-500 text-sm">
                   Spotify -{' '}
                   <span className=" dark:text-gray-100 text-gray-800">
                     Not Playing
@@ -25,13 +27,13 @@ export default function Footer() {
             </div>
             <div className=" flex-1 grid grid-cols-1 gap-8 sm:grid-cols-3">
               <div className=" space-y-2 flex-1">
-                <h1 className=" text-lg font-semibold">General</h1>
+                <h1 className=" font-semibold">General</h1>
                 <nav className=" flex flex-col gap-y-1">
                   {MENU.map((menu, index) => (
                     <Link
                       key={index}
                       href={menu.path}
-                      className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
+                      className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                     >
                       {menu.title}
                     </Link>
@@ -39,14 +41,14 @@ export default function Footer() {
                 </nav>
               </div>
               <div className=" space-y-2 flex-1">
-                <h1 className=" text-lg font-semibold">Social</h1>
+                <h1 className="  font-semibold">Social</h1>
                 <nav className=" flex flex-col gap-y-1">
                   {SOCIAL_LIST.map((social, index) => (
                     <Link
                       key={index}
                       href={social.url}
                       target="_blank"
-                      className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
+                      className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                     >
                       {social.name}
                     </Link>
@@ -54,12 +56,12 @@ export default function Footer() {
                 </nav>
               </div>
               <div className=" space-y-2 flex-1">
-                <h1 className=" text-lg font-semibold">Extra</h1>
+                <h1 className="  font-semibold">Extra</h1>
                 <nav className=" flex flex-col gap-y-1">
                   <Link
                     href="https://github.com/zulfianfreza/julianreza.com"
                     target="_blank"
-                    className=" text-gray-500 dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
+                    className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
                   >
                     Source Code
                   </Link>
@@ -68,10 +70,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center mt-10 justify-center">
-            <p className=" text-gray-500 dark:text-gray-400">
+            <p className=" text-gray-500 dark:text-gray-400 text-sm">
               Made with Basreng and Bajigur.
             </p>
-            <p className=" text-gray-500 dark:text-gray-400">
+            <p className=" text-gray-500 dark:text-gray-400 text-sm">
               Copyright &copy; 2023, julianreza.
             </p>
           </div>

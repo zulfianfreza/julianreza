@@ -12,19 +12,25 @@ import ProjectItem from '@/components/ProjectItem'
 import SpeedCodeSection from '@/components/SpeedCodeSection'
 import { LuCalendarDays, LuClock } from 'react-icons/lu'
 
+export const POSTS = [
+  {
+    title:
+      'Build CRUD App with T3 Stack (Next.js, tRPC, Tailwind CSS, Prisma, NextAuth, MongoDB)',
+    publishedDate: 'Aug 18, 2023',
+    readTime: '7 min read',
+  },
+  {
+    title: 'How To Center a Div',
+    publishedDate: 'Jun 26, 2023',
+    readTime: '3 min read',
+  },
+  {
+    title: 'TODO App with MongoDB and Next.js 13 App Router',
+    publishedDate: 'Aug 10, 2023',
+    readTime: '3 min read',
+  },
+]
 export default function Home() {
-  const POSTS = [
-    {
-      title: 'Build CRUD App with tRPC Next.js',
-      publishedDate: 'Aug 18, 2023',
-      readTime: '7 min read',
-    },
-    {
-      title: 'How To Center a Div',
-      publishedDate: 'Jun 26, 2023',
-      readTime: '3 min read',
-    },
-  ]
   const projects = getProjects()
 
   return (
@@ -65,15 +71,18 @@ export default function Home() {
               Contact me 🤙
             </Link>
           </p>
-          <Link
+          {/* <Link
             href=""
             className=" text-white rounded-md mt-2 text-sm flex items-center font-medium px-4 h-10 bg-amber-400 transition duration-100"
           >
             Resume
-          </Link>
+          </Link> */}
         </div>
-        <div className=" w-24 md:w-36 aspect-square relative rounded-full overflow-hidden transition-all duration-300">
-          <Image src="/images/profile.jpeg" fill alt="" />
+        <div className=" relative">
+          {/* <div className="w-24 md:w-36 aspect-square rounded-full border-2 border-yellow-400 absolute border-dashed -right-10 top-5"></div> */}
+          <div className=" w-24 md:w-36 aspect-square relative rounded-full overflow-hidden transition-all duration-300">
+            <Image src="/images/profile.jpeg" fill alt="" />
+          </div>
         </div>
       </div>
       <div className=" mt-10">
@@ -107,13 +116,13 @@ export default function Home() {
           title="Latest Posts ✏️"
           subtitle="Discover my random posts, feel free to explore it."
         />
-        <div className=" mt-4 grid grid-cols-2 gap-4">
+        <div className=" mt-4 flex flex-col divide-y">
           {POSTS.map((post, index) => (
             <div
               key={index}
-              className=" p-1 bg-gradient-to-r from-yellow-400 via-pink-400 to-indigo-600 rounded-xl overflow-hidden"
+              className=" py-8 first-of-type:pt-0 last-of-type:pb-0"
             >
-              <div className=" w-full p-4 bg-white rounded-lg h-full dark:bg-gray-950">
+              <div className=" w-full bg-white rounded-lg h-full dark:bg-gray-950">
                 <div className=" flex items-center gap-x-1 text-gray-500 text-sm dark:text-gray-400 mb-2">
                   <LuCalendarDays />
                   <p>Aug 18, 2023</p>
@@ -123,11 +132,11 @@ export default function Home() {
                 </div>
                 <Link
                   href="/"
-                  className=" text-gray-800 text-xl font-medium dark:text-gray-100"
+                  className=" text-gray-800 text-2xl font-medium dark:text-gray-100"
                 >
                   {post.title}
                 </Link>
-                <p className=" line-clamp-2 text-gray-500 dark:text-gray-400">
+                <p className=" line-clamp-1 text-gray-500 dark:text-gray-400">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                   molestiae commodi dicta dolore, perferendis amet nostrum hic
                   autem aspernatur iste laboriosam veritatis ea sunt. Deleniti!
@@ -135,19 +144,6 @@ export default function Home() {
               </div>
             </div>
           ))}
-          {/* <div className="">
-            <Link
-              href="/"
-              className=" text-gray-800 text-2xl font-medium"
-            ></Link>
-            <div className=" flex items-center gap-x-1 text-gray-500 text-sm">
-              <LuCalendarDays />
-              <p>Aug 18, 2023</p>
-              <div className=" h-1 w-1 rounded-full bg-gray-800 mx-1"></div>
-              <LuClock />
-              <p>7 min read</p>
-            </div>
-          </div> */}
         </div>
         <div className="mt-4 flex justify-end w-full">
           <ExploreLink href="/showcase" label="Read all posts" />

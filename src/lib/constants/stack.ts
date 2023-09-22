@@ -16,4 +16,5 @@ export const MY_STACK = [
   'Provider',
   'BLoC',
   'tRPC',
+  'Golang',
 ]

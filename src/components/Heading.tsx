@@ -1,3 +1,5 @@
+'use client'
+
 import { cn } from '@/lib/utils'
 import React from 'react'
 
@@ -18,7 +20,7 @@ export default function Heading({ title, subtitle, center }: HeadingProps) {
         <h1 className="font-semibold text-3xl text-gray-800 z-10 dark:text-gray-100">
           {title}
         </h1>
-        <div className=" w-3/4 h-2 absolute bg-yellow-400 dark:bg-yellow-500 bottom-1 right-0"></div>
+        <div className=" w-3/4 h-[6px] absolute bg-yellow-400 dark:bg-yellow-500 bottom-1 right-0"></div>
       </div>
       <p className=" text-gray-500 dark:text-gray-400 text">{subtitle}</p>
     </div>
