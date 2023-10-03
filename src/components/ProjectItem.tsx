@@ -46,7 +46,7 @@ export default function ProjectItem({ data }: { data: IProject }) {
             <IconStack key={index} stack={stack} />
           ))}
         </div> */}
-        <p className=" text-gray-500 dark:text-gray-400 line-clamp-3">
+        <p className=" text-gray-500 dark:text-gray-400 line-clamp-3 text-sm">
           {data.summary}
         </p>
       </div>

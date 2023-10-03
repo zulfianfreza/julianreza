@@ -8,12 +8,13 @@ import { Analytics } from '@vercel/analytics/react'
 
 const font = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata: Metadata = {
   title: 'Julian Reza',
-  icons: '/logo-black.png',
+  icons: '/images/logo-black.png',
+  description: '',
 }
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Providers>
-          <div className=" bg-white w-full dark:bg-gray-950 transition duration-300 min-h-screen relative tracking-tighter">
+          <div className=" bg-white w-full dark:bg-gray-950 transition duration-300 min-h-screen relative tracking-tighter font-normal">
             <Navbar />
             <div className="">{children}</div>
             <Footer />

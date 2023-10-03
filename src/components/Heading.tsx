@@ -22,7 +22,7 @@ export default function Heading({ title, subtitle, center }: HeadingProps) {
         </h1>
         <div className=" w-3/4 h-[6px] absolute bg-yellow-400 dark:bg-yellow-500 bottom-1 right-0"></div>
       </div>
-      <p className=" text-gray-500 dark:text-gray-400 text">{subtitle}</p>
+      <p className=" text-gray-500 dark:text-gray-400 text-sm">{subtitle}</p>
     </div>
   )
 }

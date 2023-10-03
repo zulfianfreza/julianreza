@@ -16,7 +16,10 @@ export default function SpeedCodeSection() {
       <Heading title="Speed Code 🚀" />
       <div className=" gap-4 mt-4 w-full flex overflow-x-scroll [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {URL.map((url, index) => (
-          <div key={index} className="">
+          <div
+            key={index}
+            className=" scale-[0.8] rounded-lg -mx-[32.8px] -my-[86px]"
+          >
             <InstagramEmbed url={url} width={328} />
           </div>
         ))}

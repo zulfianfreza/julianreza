@@ -1,23 +1,23 @@
 import Container from '@/components/Container'
 import Heading from '@/components/Heading'
+import { POSTS } from '@/lib/constants/post'
 import Link from 'next/link'
 import { LuCalendarDays, LuClock } from 'react-icons/lu'
-import { POSTS } from '../page'
 
 export default function Page() {
   return (
     <Container className=" mt-10">
       <Heading
         title="Featured Post"
-        subtitle="Discover my random posts, feel free to read and explore it."
+        subtitle="Discover my random posts, feel free to read and explore it. (still dummy)"
       />
-      <div className=" mt-4 flex flex-col divide-y">
+      <div className=" mt-4 flex flex-col divide-y dark:divide-gray-800">
         {POSTS.map((post, index) => (
           <div
             key={index}
             className=" py-4 first-of-type:pt-0 last-of-type:pb-0"
           >
-            <div className=" w-full bg-white rounded-lg h-full dark:bg-gray-950">
+            <div className=" w-full rounded-lg h-full ">
               <div className=" flex items-center gap-x-1 text-gray-500 text-sm dark:text-gray-400 mb-2">
                 <LuCalendarDays />
                 <p>Aug 18, 2023</p>
@@ -31,7 +31,7 @@ export default function Page() {
               >
                 {post.title}
               </Link>
-              <p className=" line-clamp-1 text-gray-500 dark:text-gray-400">
+              <p className=" line-clamp-1 text-gray-500 dark:text-gray-400 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                 molestiae commodi dicta dolore, perferendis amet nostrum hic
                 autem aspernatur iste laboriosam veritatis ea sunt. Deleniti!

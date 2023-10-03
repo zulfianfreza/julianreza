@@ -11,39 +11,22 @@ import getProjects from '@/services/project/getProjects'
 import ProjectItem from '@/components/ProjectItem'
 import SpeedCodeSection from '@/components/SpeedCodeSection'
 import { LuCalendarDays, LuClock } from 'react-icons/lu'
+import { POSTS } from '@/lib/constants/post'
 
-export const POSTS = [
-  {
-    title:
-      'Build CRUD App with T3 Stack (Next.js, tRPC, Tailwind CSS, Prisma, NextAuth, MongoDB)',
-    publishedDate: 'Aug 18, 2023',
-    readTime: '7 min read',
-  },
-  {
-    title: 'How To Center a Div',
-    publishedDate: 'Jun 26, 2023',
-    readTime: '3 min read',
-  },
-  {
-    title: 'TODO App with MongoDB and Next.js 13 App Router',
-    publishedDate: 'Aug 10, 2023',
-    readTime: '3 min read',
-  },
-]
 export default function Home() {
   const projects = getProjects()
 
   return (
     <Container>
-      <div className="flex sm:items-center gap-x-10 my-10 sm:flex-row flex-col-reverse items-start gap-8">
+      <div className="flex sm:items-center gap-x-16 my-10 sm:flex-row flex-col-reverse items-start gap-8">
         <div className=" flex-1 flex flex-col items-start">
           {/* <p className=" text-gray-500 dark:text-gray-400 text-sm">
             Hallo 👋, I&apos;m <br />
           </p> */}
-          <h1 className=" text-3xl md:text-5xl text-gray-800 dark:text-gray-100 font-semibold">
+          <h1 className=" text-3xl md:text-5xl text-gray-800 dark:text-gray-100 font-bold">
             Zulfian F. Reza
           </h1>
-          <p className=" text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+          <p className=" text-gray-500 dark:text-gray-400 mt-2 leading-relaxed text-sm">
             I am a{' '}
             <span className=" font-medium text-gray-800 dark:text-gray-100">
               software engineer
@@ -62,7 +45,7 @@ export default function Home() {
             </span>
             .
           </p>
-          <p className=" text-gray-500 dark:text-gray-400">
+          <p className=" text-gray-500 dark:text-gray-400 text-sm">
             Want to collaborate?{' '}
             <Link
               href="/"
@@ -78,11 +61,14 @@ export default function Home() {
             Resume
           </Link> */}
         </div>
-        <div className=" relative">
-          {/* <div className="w-24 md:w-36 aspect-square rounded-full border-2 border-yellow-400 absolute border-dashed -right-10 top-5"></div> */}
-          <div className=" w-24 md:w-36 aspect-square relative rounded-full overflow-hidden transition-all duration-300">
-            <Image src="/images/profile.jpeg" fill alt="" />
-          </div>
+        {/* <div className="w-24 md:w-36 aspect-square rounded-full border-2 border-yellow-400 absolute border-dashed -right-10 top-5"></div> */}
+        <div className=" w-24 sm:w-32 md:w-36 aspect-square relative rounded-full overflow-hidden transition-all duration-300">
+          <Image
+            src="/images/profile.jpg"
+            fill
+            alt=""
+            className=" object-cover object-center"
+          />
         </div>
       </div>
       <div className=" mt-10">
@@ -97,7 +83,7 @@ export default function Home() {
           {projects
             .filter(
               (project) =>
-                project.slug === 'circle' || project.slug === 'healio'
+                project.slug === 'catalink' || project.slug === 'healio'
             )
             .map((project, index) => (
               <ProjectItem data={project} key={index} />
@@ -114,9 +100,9 @@ export default function Home() {
       <div className=" mt-10">
         <Heading
           title="Latest Posts ✏️"
-          subtitle="Discover my random posts, feel free to explore it."
+          subtitle="Discover my random posts, feel free to explore it. (still dummy)"
         />
-        <div className=" mt-4 flex flex-col divide-y">
+        <div className=" mt-4 flex flex-col divide-y dark:divide-gray-800">
           {POSTS.map((post, index) => (
             <div
               key={index}
@@ -136,7 +122,7 @@ export default function Home() {
                 >
                   {post.title}
                 </Link>
-                <p className=" line-clamp-1 text-gray-500 dark:text-gray-400">
+                <p className=" line-clamp-1 text-gray-500 dark:text-gray-400 text-sm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                   molestiae commodi dicta dolore, perferendis amet nostrum hic
                   autem aspernatur iste laboriosam veritatis ea sunt. Deleniti!

@@ -17,16 +17,18 @@ export default function Page() {
                 <h4 className=" text-gray-800 dark:text-gray-100 font-medium text-lg">
                   Bachelor of Informatics Engineering
                 </h4>
-                <h4 className=" text-gray-500 dark:text-gray-400">
+                <h4 className=" text-gray-500 dark:text-gray-400 text-sm">
                   Universitas Komputer Indonesia, Bandung
                 </h4>
               </div>
-              <p className=" text-gray-800 dark:text-gray-50">2018 - 2022</p>
+              <p className=" text-gray-800 dark:text-gray-50 text-sm">
+                2018 - 2022
+              </p>
             </div>
-            <p className=" text-gray-500 dark:text-gray-400">
+            <p className=" text-gray-500 dark:text-gray-400 text-sm">
               Cumulative GPA: 3.33/4.00
             </p>
-            <p className=" text-gray-500 dark:text-gray-400">
+            <p className=" text-gray-500 dark:text-gray-400 text-sm">
               Thesis: Health Monitoring Application by Utilizing an
               Android-Based Smartwatch
             </p>
@@ -37,11 +39,13 @@ export default function Page() {
                 <h4 className=" text-gray-800 dark:text-gray-100 font-medium text-lg">
                   Software Engineering
                 </h4>
-                <h4 className=" text-gray-500 dark:text-gray-400">
+                <h4 className=" text-gray-500 dark:text-gray-400 text-sm">
                   SMKN 4 Padalarang, Bandung
                 </h4>
               </div>
-              <p className=" text-gray-800 dark:text-gray-50">2015 - 2018</p>
+              <p className=" text-gray-800 dark:text-gray-50 text-sm">
+                2015 - 2018
+              </p>
             </div>
           </div>
         </div>
@@ -54,11 +58,11 @@ export default function Page() {
               <h1 className=" font-medium text-lg text-gray-800 dark:text-gray-100 flex-1">
                 Dinas Perhubungan Provinsi Jawa Barat
               </h1>
-              <p className=" text-gray-800 dark:text-gray-50">
-                Sept 2021 - Dec 2021
+              <p className=" text-gray-800 dark:text-gray-50 text-sm">
+                Oct 2021 - Dec 2021
               </p>
             </div>
-            <article className="">
+            <article className=" text-sm">
               <ul className=" list-disc ml-8 text-gray-500 dark:text-gray-400">
                 <li>
                   Responsible for recapitulation of ANDALALIN (Traffic Impact
@@ -76,11 +80,11 @@ export default function Page() {
               <h1 className=" font-medium text-lg text-gray-800 dark:text-gray-100 flex-1">
                 PT. KONSEP DOT NET
               </h1>
-              <p className=" text-gray-800 dark:text-gray-50">
+              <p className=" text-gray-800 dark:text-gray-50 text-sm">
                 Jan 2017 - Apr 2017
               </p>
             </div>
-            <article className="">
+            <article className=" text-sm">
               <ul className=" list-disc ml-8 text-gray-500 dark:text-gray-400">
                 <li>
                   Perform slicing of designs that have been provided using HTML,
