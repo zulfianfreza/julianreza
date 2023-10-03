@@ -5,10 +5,10 @@ import React from 'react'
 import ThemeToggle from './ThemeToggle'
 import { usePathname } from 'next/navigation'
 import MobileMenu from './MobileMenu'
-import Logo from './Logo'
+import Logo from '../../Logo'
 import { cn } from '@/lib/utils'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
-import Container from './Container'
+import Container from '../../Container'
 import { MENU } from '@/lib/constants/menu'
 
 interface ItemMenuProps {
@@ -55,9 +55,6 @@ export default function Navbar() {
               {MENU.map((menu, index) => (
                 <ItemMenu key={index} title={menu.title} path={menu.path} />
               ))}
-              {/* <ItemMenu title="About" path="/about" />
-              <ItemMenu title="Showcase" path="/showcase" />
-              <ItemMenu title="Blog" path="/blog" /> */}
             </div>
             <div className=" flex-1 flex justify-end gap-x-1">
               <ThemeToggle />

@@ -1,7 +1,7 @@
 'use client'
 
 import { InstagramEmbed } from 'react-social-media-embed'
-import Heading from './Heading'
+import Heading from '../Heading'
 
 export default function SpeedCodeSection() {
   const URL = [

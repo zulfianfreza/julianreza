@@ -1,13 +1,12 @@
 import Container from '@/components/Container'
-import getProjectBySlug from '@/services/project/getProjectBySlug'
-import Image from 'next/image'
-import React from 'react'
-import Markdown from 'markdown-to-jsx'
-import { Globe } from 'lucide-react'
-import { SiGithub } from 'react-icons/si'
 import Heading from '@/components/Heading'
-import Link from 'next/link'
+import getProjectBySlug from '@/services/project/getProjectBySlug'
+import { Globe } from 'lucide-react'
+import Markdown from 'markdown-to-jsx'
 import { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { SiGithub } from 'react-icons/si'
 
 interface PageParams {
   params: {

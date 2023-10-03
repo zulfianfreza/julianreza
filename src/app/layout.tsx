@@ -2,8 +2,8 @@ import Providers from '@/components/Providers'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import Navbar from '@/components/layout/navbar/Navbar'
+import Footer from '@/components/layout/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
 
 const font = Poppins({
@@ -26,9 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Providers>
-          <div className=" bg-white w-full dark:bg-gray-950 transition duration-300 min-h-screen relative tracking-tighter font-normal">
+          <div className=" bg-white w-full flex flex-col dark:bg-gray-950 transition duration-300 min-h-screen relative tracking-tighter font-normal">
             <Navbar />
-            <div className="">{children}</div>
+            <div className=" flex-1">{children}</div>
             <Footer />
           </div>
         </Providers>

@@ -1,8 +1,7 @@
 import Container from '@/components/Container'
 import Heading from '@/components/Heading'
-import ProjectItem from '@/components/ProjectItem'
+import ProjectItem from '@/components/project/ProjectItem'
 import getProjects from '@/services/project/getProjects'
-import React from 'react'
 
 export default function Showcase() {
   const projects = getProjects()

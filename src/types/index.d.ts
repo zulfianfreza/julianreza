@@ -21,3 +21,11 @@ declare interface ISocial {
   name: string
   url: string
 }
+
+declare interface IPost {
+  title: string
+  slug: string
+  summary: string
+  date: Date
+  content: string
+}

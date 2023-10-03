@@ -4,13 +4,13 @@ import { SOCIAL_LIST } from '@/lib/constants/social'
 import Link from 'next/link'
 import React from 'react'
 import { SiSpotify } from 'react-icons/si'
-import Container from './Container'
+import Container from '../../Container'
 import { MENU } from '@/lib/constants/menu'
 
 export default function Footer() {
   return (
     <>
-      <Container className=" mt-10">
+      <Container className=" mt-10 w-full">
         <hr className=" border-gray-200 dark:border-gray-800 transition duration-300" />
         <footer className=" py-10">
           <div className="flex flex-col md:flex-row gap-x-36 gap-y-8 md:gap-y-4 justify-between">

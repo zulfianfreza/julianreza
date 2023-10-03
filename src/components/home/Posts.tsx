@@ -1,17 +1,23 @@
-import Container from '@/components/Container'
-import Heading from '@/components/Heading'
-import getPosts from '@/services/post/getPosts'
+'use client'
+
+import React from 'react'
+import Heading from '../Heading'
+import { IPost } from '@/types'
+import { LuCalendarDays, LuClock } from 'react-icons/lu'
 import { format } from 'date-fns'
 import Link from 'next/link'
-import { LuCalendarDays, LuClock } from 'react-icons/lu'
+import ExploreLink from '../ExploreLink'
 
-export default function Page() {
-  const posts = getPosts()
+interface PostsProps {
+  posts: IPost[]
+}
+
+export default function Posts({ posts }: PostsProps) {
   return (
-    <Container className=" mt-10">
+    <div className=" mt-10">
       <Heading
-        title="Featured Post"
-        subtitle="Discover my random posts, feel free to read and explore it."
+        title="Latest Posts ✏️"
+        subtitle="Discover my random posts, feel free to explore it."
       />
       <div className=" mt-4 flex flex-col divide-y dark:divide-gray-800">
         {posts.map((post, index) => {
@@ -44,6 +50,9 @@ export default function Page() {
           )
         })}
       </div>
-    </Container>
+      <div className="mt-4 flex justify-end w-full">
+        <ExploreLink href="/showcase" label="Read all posts" />
+      </div>
+    </div>
   )
 }
