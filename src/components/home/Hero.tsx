@@ -3,19 +3,33 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { TypeAnimation } from 'react-type-animation'
 
 export default function Hero() {
   return (
     <div className="flex sm:items-center gap-x-16 my-10 sm:flex-row flex-col-reverse items-start gap-8">
       <div className=" flex-1 flex flex-col items-start">
+        <p className=" text-gray-800 dark:text-gray-100">Hallo, i&apos;m</p>
         <h1
           className={cn(
             ' text-3xl md:text-5xl  font-bold',
-            'text-gray-800 dark:text-gray-100'
-            // 'bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-indigo-700'
+            // 'text-gray-800 dark:text-gray-100'
+            'bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-indigo-700'
           )}
         >
-          Zulfian F. Reza
+          <TypeAnimation
+            sequence={[
+              'Zulfian F. Reza',
+              2000,
+              'Fullstack Developer',
+              2000,
+              'Code Crafter',
+              2000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+          />
         </h1>
         <p className=" text-gray-500 dark:text-gray-400 mt-2 leading-relaxed text-sm">
           I am a{' '}
