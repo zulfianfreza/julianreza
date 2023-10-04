@@ -6,6 +6,7 @@ import React from 'react'
 import { SiSpotify } from 'react-icons/si'
 import Container from '../../Container'
 import { MENU } from '@/lib/constants/menu'
+import Logo from '@/components/Logo'
 
 export default function Footer() {
   return (
@@ -14,8 +15,9 @@ export default function Footer() {
         <hr className=" border-gray-200 dark:border-gray-800 transition duration-300" />
         <footer className=" py-10">
           <div className="flex flex-col md:flex-row gap-x-36 gap-y-8 md:gap-y-4 justify-between">
-            <div className="">
-              <div className="flex items-center gap-x-2">
+            <div className=" space-y-4">
+              <Logo />
+              {/* <div className="flex items-center gap-x-2">
                 <SiSpotify className=" h-5 w-5 text-[#1dd05e]" />
                 <p className=" dark:text-gray-400 text-gray-500 text-sm">
                   Spotify -{' '}
@@ -23,7 +25,7 @@ export default function Footer() {
                     Not Playing
                   </span>
                 </p>
-              </div>
+              </div> */}
             </div>
             <div className=" flex-1 grid grid-cols-1 gap-8 sm:grid-cols-3">
               <div className=" space-y-2 flex-1">

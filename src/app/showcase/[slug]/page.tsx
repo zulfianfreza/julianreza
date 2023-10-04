@@ -36,14 +36,14 @@ export default function Page({ params }: PageParams) {
           <Link
             href={project.repo}
             target={project.repo != '' ? '_blank' : ''}
-            className=" gap-x-1 px-4 h-10 dark:bg-gray-800 border-gray-300 dark:border-gray-600 bg-gray-100 border rounded-md hover:bg-gray-200 font-medium text-gray-800 dark:text-gray-100 dark:hover:bg-gray-700 flex items-center text-sm justify-center"
+            className=" gap-x-1 px-4 h-10 dark:bg-gray-900 border-gray-300 dark:border-gray-700 bg-gray-100 border rounded-md hover:bg-gray-200 font-medium text-gray-800 dark:text-gray-100 dark:hover:bg-gray-800 flex items-center text-sm justify-center"
           >
             <SiGithub size={16} /> Repository
           </Link>
           <Link
             href={project.demo}
             target="_blank"
-            className=" flex items-center dark:bg-gray-800 border-gray-300 dark:border-gray-600 bg-gray-100 border rounded-md hover:bg-gray-200 font-medium text-gray-800 dark:text-gray-100 dark:hover:bg-gray-700 h-10 px-4 text-sm justify-center gap-x-1"
+            className=" flex items-center dark:bg-gray-900 border-gray-300 dark:border-gray-700 bg-gray-100 border rounded-md hover:bg-gray-200 font-medium text-gray-800 dark:text-gray-100 dark:hover:bg-gray-800 h-10 px-4 text-sm justify-center gap-x-1"
           >
             <Globe size={16} /> Live Demo
           </Link>

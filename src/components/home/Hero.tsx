@@ -1,4 +1,5 @@
 'use client'
+import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -7,7 +8,13 @@ export default function Hero() {
   return (
     <div className="flex sm:items-center gap-x-16 my-10 sm:flex-row flex-col-reverse items-start gap-8">
       <div className=" flex-1 flex flex-col items-start">
-        <h1 className=" text-3xl md:text-5xl text-gray-800 dark:text-gray-100 font-bold">
+        <h1
+          className={cn(
+            ' text-3xl md:text-5xl  font-bold',
+            'text-gray-800 dark:text-gray-100'
+            // 'bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-indigo-700'
+          )}
+        >
           Zulfian F. Reza
         </h1>
         <p className=" text-gray-500 dark:text-gray-400 mt-2 leading-relaxed text-sm">

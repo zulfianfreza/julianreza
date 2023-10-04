@@ -5,6 +5,7 @@ import { Poppins } from 'next/font/google'
 import Navbar from '@/components/layout/navbar/Navbar'
 import Footer from '@/components/layout/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
+import { cn } from '@/lib/utils'
 
 const font = Poppins({
   subsets: ['latin'],
@@ -23,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={font.className}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(font.className)}>
         <Providers>
           <div className=" bg-white w-full isolate flex flex-col dark:bg-gray-950 transition duration-300 min-h-screen relative tracking-tighter font-normal">
             <div

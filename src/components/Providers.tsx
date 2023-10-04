@@ -8,7 +8,7 @@ interface ProvidersProps {
 
 export default function Providers({ children }: ProvidersProps) {
   return (
-    <ThemeProvider attribute="class" enableSystem defaultTheme="light">
+    <ThemeProvider attribute="class" enableSystem defaultTheme="dark">
       {children}
     </ThemeProvider>
   )
