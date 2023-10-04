@@ -23,10 +23,13 @@ export default function ProjectItem({ data }: { data: IProject }) {
             {data.title}
           </h1>
           <div
-            className={cn(' px-2 py-[2px] transition-all duration-300', {
-              'bg-indigo-100': data.finish,
-              'bg-pink-100': data.finish === false,
-            })}
+            className={cn(
+              ' px-2 py-[2px] transition-all duration-300 rounded-sm',
+              {
+                'bg-indigo-100': data.finish,
+                'bg-pink-100': data.finish === false,
+              }
+            )}
           >
             <p
               className={cn(

@@ -12,7 +12,7 @@ export default function Projects({ projects }: ProjectsProps) {
   return (
     <div className=" mt-10">
       <Heading
-        title="Featured Projects"
+        title="Featured Projects 🧑🏻‍💻"
         subtitle="Check out my featured projects to see some of my best work and learn more about my skills and experience as a developer. Feel free to explore it."
       />
       <div className=" grid grid-cols-1 md:grid-cols-2 mt-4 gap-8">

@@ -70,11 +70,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center mt-10 justify-center">
-            <p className=" text-gray-500 dark:text-gray-400 text-sm">
+            <p className=" text-gray-800 dark:text-gray-100 text-sm">
               Made with Basreng and Bajigur.
             </p>
-            <p className=" text-gray-500 dark:text-gray-400 text-sm">
-              Copyright &copy; 2023, julianreza.
+            <p className=" text-gray-800 dark:text-gray-100 text-sm">
+              Copyright &copy; 2023 julianreza. All right Reserved.
             </p>
           </div>
         </footer>
