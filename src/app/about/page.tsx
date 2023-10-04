@@ -102,10 +102,7 @@ export default function Page() {
         </div>
       </div>
       <div className=" mt-10">
-        <Heading
-          title="My Stack"
-          subtitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo vel nobis deleniti totam saepe quasi dolore iste, eos vitae?"
-        />
+        <Heading title="My Stack" />
         <div className=" flex flex-wrap gap-2 mt-4">
           {MY_STACK.map((stack, index) => (
             <div

@@ -13,7 +13,7 @@ export default function ExploreLink({ href, label }: ExploreLinkProps) {
   return (
     <Link
       href={href}
-      className="flex items-center text-slate-800 dark:text-slate-100 duration-100 transition-all hover:underline"
+      className="flex items-center text-sm text-slate-800 dark:text-slate-100 duration-100 transition-all hover:underline"
     >
       {label}
       <ChevronsRight />
