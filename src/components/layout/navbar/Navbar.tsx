@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     <div
       className={cn(
-        `w-full sticky top-0 backdrop-blur-lg backdrop-filter z-50 duration-300 transition bg-white/80 dark:bg-gray-950/90 border-b border-transparent`,
+        `w-full sticky top-0 backdrop-blur-xl backdrop-filter z-50 duration-300 transition bg-white/75 dark:bg-gray-950/75 border-b border-transparent`,
         {
           ' border-gray-200 dark:border-gray-800 shadow-sm': scrollPosition > 0,
         }

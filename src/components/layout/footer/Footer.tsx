@@ -7,6 +7,7 @@ import { SiSpotify } from 'react-icons/si'
 import Container from '../../Container'
 import { MENU } from '@/lib/constants/menu'
 import Logo from '@/components/Logo'
+import MenuItem from './MenuItem'
 
 export default function Footer() {
   return (
@@ -32,13 +33,7 @@ export default function Footer() {
                 <h1 className=" font-semibold">General</h1>
                 <nav className=" flex flex-col gap-y-1">
                   {MENU.map((menu, index) => (
-                    <Link
-                      key={index}
-                      href={menu.path}
-                      className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
-                    >
-                      {menu.title}
-                    </Link>
+                    <MenuItem key={index} menu={menu} />
                   ))}
                 </nav>
               </div>
@@ -46,27 +41,19 @@ export default function Footer() {
                 <h1 className="  font-semibold">Social</h1>
                 <nav className=" flex flex-col gap-y-1">
                   {SOCIAL_LIST.map((social, index) => (
-                    <Link
-                      key={index}
-                      href={social.url}
-                      target="_blank"
-                      className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
-                    >
-                      {social.name}
-                    </Link>
+                    <MenuItem key={index} social={social} />
                   ))}
                 </nav>
               </div>
               <div className=" space-y-2 flex-1">
                 <h1 className="  font-semibold">Extra</h1>
                 <nav className=" flex flex-col gap-y-1">
-                  <Link
-                    href="https://github.com/zulfianfreza/julianreza.com"
-                    target="_blank"
-                    className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
-                  >
-                    Source Code
-                  </Link>
+                  <MenuItem
+                    social={{
+                      name: 'Source Code',
+                      url: 'https://github.com/zulfianfreza/julianreza.com',
+                    }}
+                  />
                 </nav>
               </div>
             </div>

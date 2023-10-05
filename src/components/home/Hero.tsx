@@ -7,12 +7,12 @@ import { TypeAnimation } from 'react-type-animation'
 
 export default function Hero() {
   return (
-    <div className="flex sm:items-center gap-x-16 my-10 sm:flex-row flex-col-reverse items-start gap-8">
+    <div className="flex sm:items-center gap-x-16 my-10 sm:flex-row flex-col-reverse items-start gap-y-4">
       <div className=" flex-1 flex flex-col items-start">
         <p className=" text-gray-800 dark:text-gray-100">Hallo, i&apos;m</p>
         <h1
           className={cn(
-            ' text-3xl md:text-5xl  font-bold',
+            ' text-4xl md:text-5xl  font-bold',
             // 'text-gray-800 dark:text-gray-100'
             'bg-clip-text text-transparent bg-gradient-to-r from-violet-700 to-indigo-700'
           )}
@@ -27,7 +27,7 @@ export default function Hero() {
               2000,
             ]}
             wrapper="span"
-            speed={50}
+            speed={25}
             repeat={Infinity}
           />
         </h1>
@@ -59,7 +59,7 @@ export default function Hero() {
             Contact me 🤙
           </Link>
         </p> */}
-        <div className="flex gap-2 mt-4">
+        <div className="flex gap-2 mt-4 flex-row-reverse">
           <Link
             href="mailto:zulfian.025fr@gmail.com"
             className=" px-8 h-10 rounded-full bg-gradient-to-r from-violet-700 to-indigo-700 hover:opacity-90 text-white text-sm font-medium flex justify-center items-center"
@@ -71,7 +71,7 @@ export default function Hero() {
             target="_blank"
             className=" h-10 p-[1.5px] rounded-full bg-gradient-to-r from-violet-700 to-indigo-700"
           >
-            <div className=" w-full h-full hover:bg-transparent hover:bg-opacity-90 hover:text-white transition dark:bg-gray-950 dark:text-white bg-white rounded-full px-8 flex justify-center items-center text-gray-800 text-sm font-medium">
+            <div className=" w-full h-full dark:hover:bg-transparent dark:hover:bg-opacity-90 hover:bg-transparent hover:bg-opacity-90 hover:text-white transition dark:bg-gray-950 dark:text-white bg-white rounded-full px-8 flex justify-center items-center text-gray-800 text-sm font-medium">
               Resume
             </div>
           </Link>

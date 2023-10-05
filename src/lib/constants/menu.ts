@@ -1,4 +1,9 @@
-export const MENU = [
+export interface IMenu {
+  title: string
+  path: string
+}
+
+export const MENU: IMenu[] = [
   {
     title: 'Home',
     path: '/',

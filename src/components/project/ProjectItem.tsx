@@ -9,7 +9,7 @@ import React from 'react'
 export default function ProjectItem({ data }: { data: IProject }) {
   return (
     <Link href={`/showcase/${data.slug}`} className="  group">
-      <div className=" w-full aspect-[16/9] relative rounded-xl shadow-sm overflow-hidden">
+      <div className=" w-full aspect-[16/9] relative rounded-xl shadow-sm dark:shadow-gray-800 overflow-hidden">
         <Image
           src={data.image ?? ''}
           fill={true}

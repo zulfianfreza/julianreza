@@ -12,9 +12,11 @@ declare interface IProject {
   slug: string
   image?: string
   summary: string
-  repo?: string
-  demo?: string
-  finish?: boolean
+  repo: string
+  demo: string
+  finish: boolean
+  content: string
+  stack: string[]
 }
 
 declare interface ISocial {

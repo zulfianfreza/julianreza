@@ -32,7 +32,6 @@ export default async function Page({ params }: PageParams) {
     mdxOptions: {
       rehypePlugins: [
         rehypeSlug,
-        [rehypeAutolinkHeadings, { behavior: 'wrap' }],
         // @ts-ignore
         rehypeHighlight,
       ],

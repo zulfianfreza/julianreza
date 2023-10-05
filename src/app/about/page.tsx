@@ -2,8 +2,6 @@
 import Container from '@/components/Container'
 import Heading from '@/components/Heading'
 import { MY_STACK } from '@/lib/constants/stack'
-import React, { useCallback } from 'react'
-import { useDropzone } from 'react-dropzone'
 
 export default function Page() {
   return (
@@ -26,7 +24,7 @@ export default function Page() {
               </p>
             </div>
             <p className=" text-gray-500 dark:text-gray-400 text-sm">
-              Cumulative GPA: 3.33/4.00
+              Cumulative GPA: 3.38/4.00
             </p>
             <p className=" text-gray-500 dark:text-gray-400 text-sm">
               Thesis: Health Monitoring Application by Utilizing an
@@ -65,12 +63,19 @@ export default function Page() {
             <article className=" text-sm">
               <ul className=" list-disc ml-8 text-gray-500 dark:text-gray-400">
                 <li>
-                  Responsible for recapitulation of ANDALALIN (Traffic Impact
-                  Analysis) data
+                  Manage data archives and ensure the completeness and
+                  regularity of stored data related to ANDALALIN (Traffic Impact
+                  Analysis) data.
                 </li>
                 <li>
-                  Creating an ANDALALIN Licensing Service Information System
-                  website.
+                  Designing, and developing ANDALALIN Licensing Service
+                  Information System website, and ensuring maximum accessibility
+                  for license applicants.
+                </li>
+                <li>
+                  Collaborating with relevant stakeholders to understand
+                  business needs and requirements, and integrating relevant
+                  features into the website.
                 </li>
               </ul>
             </article>
@@ -87,10 +92,13 @@ export default function Page() {
             <article className=" text-sm">
               <ul className=" list-disc ml-8 text-gray-500 dark:text-gray-400">
                 <li>
-                  Perform slicing of designs that have been provided using HTML,
-                  CSS, and Javascript.
+                  Slicing UI design into a website using HTML,CSS, Javascript
+                  and implementing responsive design.
                 </li>
-                <li>Write an article related to technology.</li>
+                <li>
+                  Create articles related to technology by following SEO
+                  guidelines
+                </li>
                 <li>
                   Become a facilitator in the KLA (Child Friendly City)
                   application launching event organized by KPPPA (Ministry of
