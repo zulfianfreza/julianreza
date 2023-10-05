@@ -15,7 +15,7 @@ export default function MenuItem({ menu, social }: MenuItemProps) {
     <Link
       href={menu?.path ?? social?.url ?? ''}
       target={social ? '_blank' : ''}
-      className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-gray-800 hover:dark:text-gray-50"
+      className=" text-gray-500 text-sm dark:text-gray-400 transition duration-100 hover:text-violet-700 dark:hover:text-violet-700"
     >
       {menu?.title ?? social?.name}
     </Link>

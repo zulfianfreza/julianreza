@@ -9,7 +9,7 @@ import React from 'react'
 export default function ProjectItem({ data }: { data: IProject }) {
   return (
     <Link href={`/showcase/${data.slug}`} className="  group">
-      <div className=" w-full aspect-[16/9] relative rounded-xl shadow-sm dark:shadow-gray-800 overflow-hidden">
+      <div className=" w-full aspect-[16/9] relative rounded-xl group-hover:scale-[1.05] transition ease-in-out shadow-sm dark:shadow-gray-800 overflow-hidden">
         <Image
           src={data.image ?? ''}
           fill={true}
@@ -49,7 +49,7 @@ export default function ProjectItem({ data }: { data: IProject }) {
             <IconStack key={index} stack={stack} />
           ))}
         </div> */}
-        <p className=" text-gray-500 dark:text-gray-400 line-clamp-3 text-sm">
+        <p className=" text-gray-500 dark:text-gray-400 line-clamp-2 text-sm">
           {data.summary}
         </p>
       </div>

@@ -19,7 +19,7 @@ export default function Page() {
                   Universitas Komputer Indonesia, Bandung
                 </h4>
               </div>
-              <p className=" text-gray-800 dark:text-gray-50 text-sm">
+              <p className=" text-gray-800 dark:text-gray-50 text-sm mt-1">
                 2018 - 2022
               </p>
             </div>
@@ -32,7 +32,7 @@ export default function Page() {
             </p>
           </div>
           <div className="">
-            <div className=" flex justify-between items-center">
+            <div className=" flex justify-between items-start">
               <div className=" flex-1">
                 <h4 className=" text-gray-800 dark:text-gray-100 font-medium text-lg">
                   Software Engineering
@@ -41,7 +41,7 @@ export default function Page() {
                   SMKN 4 Padalarang, Bandung
                 </h4>
               </div>
-              <p className=" text-gray-800 dark:text-gray-50 text-sm">
+              <p className=" text-gray-800 dark:text-gray-50 text-sm mt-1">
                 2015 - 2018
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function Page() {
               <h1 className=" font-medium text-lg text-gray-800 dark:text-gray-100 flex-1">
                 Dinas Perhubungan Provinsi Jawa Barat
               </h1>
-              <p className=" text-gray-800 dark:text-gray-50 text-sm">
+              <p className=" text-gray-800 dark:text-gray-50 text-sm mt-1">
                 Oct 2021 - Dec 2021
               </p>
             </div>
@@ -81,11 +81,11 @@ export default function Page() {
             </article>
           </div>
           <div className="">
-            <div className=" flex justify-between items-center">
+            <div className=" flex justify-between items-start">
               <h1 className=" font-medium text-lg text-gray-800 dark:text-gray-100 flex-1">
-                PT. KONSEP DOT NET
+                PT. Konsep Dot Net
               </h1>
-              <p className=" text-gray-800 dark:text-gray-50 text-sm">
+              <p className=" text-gray-800 dark:text-gray-50 text-sm mt-1">
                 Jan 2017 - Apr 2017
               </p>
             </div>

@@ -31,7 +31,7 @@ export default function Footer() {
             <div className=" flex-1 grid grid-cols-1 gap-8 sm:grid-cols-3">
               <div className=" space-y-2 flex-1">
                 <h1 className=" font-semibold">General</h1>
-                <nav className=" flex flex-col gap-y-1">
+                <nav className=" flex flex-col gap-y-2 items-start">
                   {MENU.map((menu, index) => (
                     <MenuItem key={index} menu={menu} />
                   ))}
@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
               <div className=" space-y-2 flex-1">
                 <h1 className="  font-semibold">Social</h1>
-                <nav className=" flex flex-col gap-y-1">
+                <nav className=" flex flex-col gap-y-2 items-start">
                   {SOCIAL_LIST.map((social, index) => (
                     <MenuItem key={index} social={social} />
                   ))}
@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
               <div className=" space-y-2 flex-1">
                 <h1 className="  font-semibold">Extra</h1>
-                <nav className=" flex flex-col gap-y-1">
+                <nav className=" flex flex-col gap-y-2 items-start">
                   <MenuItem
                     social={{
                       name: 'Source Code',

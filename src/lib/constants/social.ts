@@ -15,7 +15,7 @@ export const SOCIAL_LIST: ISocial[] = [
   },
   {
     name: 'Linkedin',
-    url: 'https://www.linkedin.com/in/zulfian-fachru-reza-bb70a9220/',
+    url: 'https://www.linkedin.com/in/zulfian-fachru-reza/',
   },
   {
     name: 'Telegram',
