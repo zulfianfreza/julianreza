@@ -20,6 +20,10 @@ const getProjects = (): IProject[] => {
       image: matterResult.data.image,
       summary: matterResult.data.summary,
       finish: matterResult.data.finish,
+      content: matterResult.content,
+      repo: matterResult.data.repo,
+      demo: matterResult.data.demo,
+      stack: matterResult.data.stack,
     }
   })
 
