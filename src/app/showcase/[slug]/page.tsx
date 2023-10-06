@@ -81,7 +81,7 @@ export default async function Page({ params }: PageParams) {
             {project.stack.map((tech, index) => (
               <div
                 key={index}
-                className=" px-4 py-1 border dark:border-gray-700 rounded-[4px] dark:bg-gray-800 text-sm dark:text-gray-100 bg-gray-100 text-gray-800"
+                className=" px-4 py-1 border dark:border-gray-700 rounded-full dark:bg-gray-800 text-sm font-light dark:text-gray-400 bg-gray-100 text-gray-500"
               >
                 {tech}
               </div>
