@@ -38,6 +38,7 @@ export default function MobileMenu() {
       {({ open }) => (
         <>
           <Menu.Button
+            aria-label="hamburger-menu"
             className={cn(
               `h-10 w-10 rounded-lg md:hidden items-center justify-center text-gray-950 dark:text-gray-50 hover:bg-gray-100 hover:bg-opacity-90 transition duration-100 flex dark:hover:bg-gray-800`,
               {

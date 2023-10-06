@@ -20,7 +20,7 @@ export default function Heading({ title, subtitle, center }: HeadingProps) {
         <h1 className="font-semibold text-3xl text-gray-800 z-10 dark:text-gray-100">
           {title}
         </h1>
-        <div className=" w-3/4 h-[6px] absolute bg-gradient-to-r from-violet-700 to-indigo-700 bottom-1 right-0"></div>
+        {/* <div className=" w-3/4 h-[6px] absolute bg-gradient-to-r from-violet-700 to-indigo-700 bottom-1 right-0"></div> */}
       </div>
       <p className=" text-gray-500 dark:text-gray-400 text-sm">{subtitle}</p>
     </div>
