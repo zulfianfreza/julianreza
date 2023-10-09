@@ -13,10 +13,16 @@ const font = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Julian Reza',
+  title: 'Julian Reza - My Peronal Portfolio',
   icons: '/images/logo-black.png',
   description:
     'I am a software engineer who really interested in Frontend, Mobile, also Fullstack Development.',
+  openGraph: {
+    title: 'Julian Reza - My Personal Portfolio',
+    description:
+      'I am a software engineer who really interested in Frontend, Mobile, also Fullstack Development.',
+    images: ['/images/logo-black.png'],
+  },
 }
 
 export default function RootLayout({

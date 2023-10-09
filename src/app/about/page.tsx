@@ -8,7 +8,7 @@ export default function Page() {
     <Container className=" mt-10">
       <div className="">
         <Heading title="My Ninja Way 🥷" />
-        <div className=" flex flex-col gap-y-4 mt-4">
+        <div className=" flex flex-col gap-y-4 mt-4" style={{}}>
           <div className="">
             <div className=" flex justify-between items-start">
               <div className=" flex-1">
@@ -80,7 +80,7 @@ export default function Page() {
               </ul>
             </article>
           </div>
-          <div className="">
+          <div className=" mt-4">
             <div className=" flex justify-between items-start">
               <h1 className=" font-medium text-lg text-gray-800 dark:text-gray-100 flex-1">
                 PT. Konsep Dot Net

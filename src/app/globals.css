@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.instagram-media {
+  border-radius: 8px !important;
+}
+
+.rsme-embed {
+  border-radius: 8px !important;
+}
