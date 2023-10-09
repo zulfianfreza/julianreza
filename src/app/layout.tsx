@@ -21,8 +21,9 @@ export const metadata: Metadata = {
     title: 'Julian Reza - My Personal Portfolio',
     description:
       'I am a software engineer who really interested in Frontend, Mobile, also Fullstack Development.',
-    images: ['/images/logo-black.png'],
+    images: ['/images/og-image.png'],
   },
+  twitter: { card: 'summary_large_image', images: ['/images/og-image.png'] },
 }
 
 export default function RootLayout({
