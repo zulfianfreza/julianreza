@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { LuDownload, LuDownloadCloud } from 'react-icons/lu'
 import { TypeAnimation } from 'react-type-animation'
 
 export default function Hero() {
@@ -59,7 +60,7 @@ export default function Hero() {
             Contact me 🤙
           </Link>
         </p> */}
-        <div className="flex gap-2 mt-4 flex-row-reverse">
+        <div className="flex gap-2 mt-4 ">
           <Link
             href="mailto:zulfian.025fr@gmail.com"
             className=" px-8 h-10 rounded-full bg-gradient-to-r from-violet-700 to-indigo-700 hover:opacity-90 text-white text-sm font-medium flex justify-center items-center"
@@ -71,15 +72,16 @@ export default function Hero() {
             target="_blank"
             className=" h-10 p-[1.5px] rounded-full bg-gradient-to-r from-violet-700 to-indigo-700"
           >
-            <div className=" w-full h-full dark:hover:bg-transparent dark:hover:bg-opacity-90 hover:bg-transparent hover:bg-opacity-90 hover:text-white transition dark:bg-gray-950 dark:text-white bg-white rounded-full px-8 flex justify-center items-center text-gray-800 text-sm font-medium">
-              Resume
+            <div className=" w-full h-full dark:hover:bg-transparent gap-1 dark:hover:bg-opacity-90 hover:bg-transparent hover:bg-opacity-90 hover:text-white transition dark:bg-gray-950 dark:text-white bg-white rounded-full px-8 flex justify-center items-center text-gray-800 text-sm font-medium">
+              <LuDownloadCloud className=" animate-bounce" />
+              Download Resume
             </div>
           </Link>
         </div>
       </div>
       <div className=" w-24 sm:w-32 md:w-36 aspect-square relative rounded-full overflow-hidden transition-all duration-300">
         <Image
-          src="/images/profile.jpg"
+          src="/images/profile.jpeg"
           fill
           alt=""
           className=" object-cover object-center"
