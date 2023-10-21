@@ -73,7 +73,6 @@ export default function Hero() {
             className=" h-10 p-[1.5px] rounded-full bg-gradient-to-r from-violet-700 to-indigo-700"
           >
             <div className=" w-full h-full dark:hover:bg-transparent gap-1 dark:hover:bg-opacity-90 hover:bg-transparent hover:bg-opacity-90 hover:text-white transition dark:bg-gray-950 dark:text-white bg-white rounded-full px-8 flex justify-center items-center text-gray-800 text-sm font-medium">
-              <LuDownloadCloud className=" animate-bounce" />
               Download Resume
             </div>
           </Link>

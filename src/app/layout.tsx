@@ -36,14 +36,14 @@ export default function RootLayout({
       <body className={cn(font.className)}>
         <Providers>
           <div className=" bg-white w-full isolate flex flex-col dark:bg-gray-950 transition duration-300 min-h-screen relative tracking-tighter font-normal">
-            <div
+            {/* <div
               aria-hidden="true"
               className="pointer-events-none fixed inset-x-0 leading-none -bottom-36 sm:-bottom-10 blur-3xl right-0 -z-10 transform-gpu overflow-hidden"
             >
               <p className=" text-[520px] text-transparent bg-gradient-to-r from-violet-500 to-violet-900 bg-clip-text opacity-50">
                 JR
               </p>
-            </div>
+            </div> */}
             <Navbar />
             <div className=" flex-1">{children}</div>
             <Footer />
