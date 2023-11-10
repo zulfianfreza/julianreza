@@ -68,7 +68,7 @@ export default function Hero() {
             Hire Me
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1aiJZP82UKz9mkzB4uD521e6H90Qnpcnl/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1WtRfeuamFVmvvSnx_7pC7_CZbAKvle8i/view?usp=drive_link"
             target="_blank"
             className=" h-10 p-[1.5px] rounded-full bg-gradient-to-r from-violet-700 to-indigo-700"
           >
